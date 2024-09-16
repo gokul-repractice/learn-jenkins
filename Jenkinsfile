@@ -8,6 +8,11 @@ pipeline {
     environment {
         GREETING = 'HELLO JENKINS'
     }
+
+    options {
+        timeout(time: 1, unit: 'SECONDS') 
+    }
+
     stages {
         
         stage('Build') {
@@ -27,6 +32,7 @@ pipeline {
                 sh """
                 echo "Here i am writing ahell script"
                 env
+                sleep 10
                 """
             }
         }
