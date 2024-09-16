@@ -45,7 +45,7 @@ pipeline {
                 sh """
                 echo "Here i am writing ahell script"
                 env
-                sleep 10
+                #sleep 10
                 """
             }
         }
