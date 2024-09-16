@@ -10,7 +10,8 @@ pipeline {
     }
 
     options {
-        timeout(time: 1, unit: 'SECONDS') 
+        timeout(time: 1, unit: 'HOURS')
+        disableConcurrentBuilds()    // It wont allow 2 builds at a time
     }
 
     stages {
