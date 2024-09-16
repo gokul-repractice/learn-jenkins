@@ -11,7 +11,7 @@ pipeline {
 
     options {
         timeout(time: 1, unit: 'HOURS')
-        disableConcurrentBuilds()    // It wont allow multiple builds at a time
+        disableConcurrentBuilds()    // It wont allow multiple builds at a time. allows one by one only
     }
 
     parameters {
